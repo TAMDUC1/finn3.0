@@ -32,7 +32,7 @@
         </div>
         <div class="form-actions">
             <span class="pull-left"><a href="#" class="flip-link btn btn-info" id="to-recover">Lost password?</a></span>
-            <span class="pull-right"><button type="submit" class="btn btn-success">Login</button></span>
+            <span class="pull-right"><button type="submit" class="btn btn-success">Login1</button></span>
         </div>
     </form>
     <form id="recoverform" action="#" class="form-vertical">
