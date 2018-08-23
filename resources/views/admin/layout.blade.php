@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{asset('/css/backend_css/bootstrap-responsive.min.css')}}" />
     <link rel="stylesheet" href="{{asset('/css/backend_css/matrix-style.css')}}" />
     <link rel="stylesheet" href="{{asset('/css/backend_css/matrix-media.css')}}" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
     @yield('before_style')
 </head>
 <body>
@@ -55,9 +55,9 @@
 </div>
 <!--close-top-serch-->
 <!--sidebar-menu-->
-<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+<div id="sidebar"><a href="" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
     <ul>
-        <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+        <li class="active"><a href="{{route('admin.index')}}"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
         <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
         <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li>
         <li><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
@@ -71,9 +71,9 @@
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Products</span> <span class="label label-important">3</span></a>
             <ul>
-                <li><a href="form-common.html">Basic Form</a></li>
-                <li><a href="form-validation.html">Form with Validation</a></li>
-                <li><a href="form-wizard.html">Form with Wizard</a></li>
+                <li><a href="{{route('uploadProducts')}}">Upload</a></li>
+                <li><a href="form-validation.html">List Products</a></li>
+                <li><a href="form-wizard.html">Order Form</a></li>
             </ul>
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Users</span> <span class="label label-important">3</span></a>
@@ -127,7 +127,6 @@
 <!--Footer-part-->
 
 <div class="row-fluid">
-    <div id="footer" class="span12"> 2013 &copy; Matrix Admin. Brought to you by <a href="http://themedesigner.in">Themedesigner.in</a> </div>
 </div>
 
 <!--end-Footer-part-->

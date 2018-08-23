@@ -1,0 +1,43 @@
+.UploadForm{
+    overflow: hidden;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.UploadForm .FormWrapper{
+    width: 50%;
+    margin: auto;
+    clear:both;
+    background-color: transparent;
+}
+.UploadForm .FormWrapper input{
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: white;
+}
+.UploadForm .FormWrapper label{
+    color: blueviolet;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btn {
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.upload-image{
+    position: relative;
+}

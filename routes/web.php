@@ -21,8 +21,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //-----------------------------------------
+
     // Controllers Within The "App\Http\Controllers\Admin" Namespace
-    Route::resource('admin','AdminController');
     Route::prefix('admin')->group(function () {
         Route::get('/', function () {
             return view('admin.login');
@@ -30,11 +30,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 
         Route::get('/index', 'AdminController@index')->name('admin.index');
 
-        Route::post('login', 'AdminController@login')->name('adminLogin');
+        Route::post('/DashBoard', 'AdminController@login')->name('adminLogin');
       //  Route::post()
+
+
     });
 
+Route::resource('admin','AdminController');
 
+Route::get('/uploadProducts', 'ProductsController@getUpload')->name('uploadProducts');
+Route::post('/upload', 'ProductsController@postUpload')->name('upload');
+
+Route::resource('product','ProductsController');
 
 
 //-----------------------------------------
+
